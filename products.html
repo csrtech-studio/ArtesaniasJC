@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos - Artesanías JC</title>
+  <link rel="icon" href="img/logojc.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logojc.png" alt="Logo Artesanías JC" class="logo-img">
+      <h5>Artesanías JC - Productos</h5>
+
+    </div>
+    <p>Productos artesanales hechos a mano con amor.</p>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Administrador</a></li>
+      </ul>
+    </nav>
+  </header>
+    <h6>Catalogo de Productos</h6>
+  <main id="products-list">
+    <!-- Aquí se cargarán los productos desde Firebase -->
+  </main>
+
+  <footer>
+    <p>Conéctate con nosotros:</p>
+    <ul class="social-links">
+      <li><a href="https://www.facebook.com/donjulio.electrico?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+      <li><a href="https://wa.me/8111775113" target="_blank">WhatsApp</a></li>
+    </ul>
+    <p>&copy; 2024 CsrTech Studio. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Firebase SDK sin módulos -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage-compat.js"></script>
+  <script type="module" src="js/firebaseConfig.js"></script>
+  <script type="module" src="js/productos.js"></script>
+
+</body>
+</html>

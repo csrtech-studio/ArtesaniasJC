@@ -1,0 +1,304 @@
+﻿/* Reset de estilos básicos */
+body {
+    background-image: url('../Img/Fondo_Page.png');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Estilos generales para el logo */
+  .logo {
+    display: flex; /* Usamos flexbox para alinear los elementos en una fila */
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    justify-content: center; /* Centra el logo y el texto horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    flex-direction: column; /* Alinea el logo y el texto en una columna */
+  }
+  
+  .logo-img {
+    width: 200px; /* Ajusta el tamaño del logo (más pequeño para móviles) */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-bottom: 10px; /* Espacio entre el logo y el texto */
+  }
+  
+  h5 {
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  /* Estilos del encabezado y el logo */
+  header {
+    background-color: rgba(2, 44, 92, 0.7);
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+  }
+  
+  header:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  header .logo h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+  }
+  
+  
+  h6 {
+    background: rgba(243, 231, 231, 0.8); /* Fondo translúcido blanco (80% opaco) */
+    font-size: 24px; /* Ajusta el tamaño de fuente */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    text-align: center; /* Centrar el texto */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+    width: fit-content; /* El ancho se ajustará al contenido */
+    margin: 20px auto; /* Centrado en la pantalla con un margen superior e inferior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave (opcional) */
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar .menu li {
+    margin: 0 1.5em;
+  }
+  
+  .navbar .menu a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .menu a:hover {
+    background-color: rgba(11, 1, 48, 0.8);
+    transform: translateY(-3px);
+  }
+  
+  .navbar .menu a:active {
+    transform: translateY(1px);
+    background-color: #357ab7;
+  }
+  
+  /* Sección de bienvenida */
+  main {
+    padding: 2em;
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  main h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+/* Estilo de las secciones */
+section {
+    margin: 2em 0;
+}
+
+/* Estilo de tablas */
+table {
+    width: 95%; /* Ajusta el ancho al 95% */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+    border: 2px solid #000; /* Borde negro alrededor de la tabla */
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+/* Estilo para celdas de la tabla */
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ccc; /* Bordes dentro de las celdas */
+    background-color: #f5eaea;
+}
+
+/* Encabezado de las tablas */
+table th {
+    background-color: #f1c40f;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Filas alternas y hover */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form input:focus,
+form select:focus,
+form button:focus {
+    border-color: #2c0499;
+    outline: none;
+}
+
+/* Botón de envío */
+form button {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #357ab7;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    list-style: none;
+    margin: 10px 0;
+}
+
+footer .social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-links li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-links li a:hover {
+    color: #f1c40f;
+}
+
+/* Estilo para las imágenes del carrusel */
+#carousel-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousel-image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.carousel-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carousel-image-container .delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.carousel-image-container .delete-icon:hover {
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+}
+
+#image-preview {
+    display: block; /* Asegura que la imagen se trate como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 100px !important; /* Forzar el ancho de la imagen */
+    height: 100px !important; /* Forzar la altura de la imagen */
+    max-width: 100%; /* Asegura que no se desborde */
+    max-height: 100%; /* Asegura que no se desborde */
+  }

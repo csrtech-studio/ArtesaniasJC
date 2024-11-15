@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Artesanías JC - Carrito de Compras</title>
+  <link rel="icon" href="img/logojc.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/compras.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+        <img src="img/logojc.png" alt="Logo Artesanías JC" class="logo-img">
+      <h5>Artesanías JC - Compras</h5>
+    </div>
+    <p>Artesanías hechas a mano con amor y dedicación...</p>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="products.html">Productos</a></li>
+      
+        <li><a href="login.html">Administrador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Contenedor para los títulos y el total -->
+    <div class="main-container">
+      <h1>Carrito de Compras</h1>
+      <div id="cart-items"></div>
+      <p>Total: $<span id="total-amount">0.00</span></p>
+    </div>
+
+    <!-- Detalles de Envío y Pago -->
+   
+    <form id="checkout-form">
+        <h2>Detalles de Envío y Pago</h2>
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+      </div>
+      <div class="form-group">
+        <label for="address">Dirección de Entrega:</label>
+        <input type="text" id="address" name="address" required placeholder="Tu dirección completa">
+      </div>
+      <div class="form-group">
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Tu número de teléfono">
+      </div>
+      <div class="form-group">
+        <label for="payment-method">Método de Pago:</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="transferencia">Transferencia</option>
+          <option value="deposito">Depósito</option>
+          <option value="efectivo">Efectivo</option>
+        </select>
+      </div>
+    </form>
+
+    <!-- Botón para finalizar la compra -->
+    <button id="checkout">Finalizar Compra</button>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Conéctate con nosotros:</p>
+    <ul class="social-links">
+      <li><a href="https://www.facebook.com/donjulio.electrico?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+      <li><a href="https://wa.me/8111775113" target="_blank">WhatsApp</a></li>
+    </ul>
+    <p>&copy; 2024 CsrTech Studio. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/compras.js"></script>
+</body>
+</html>

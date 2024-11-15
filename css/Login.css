@@ -1,0 +1,240 @@
+﻿/* Reset de estilos básicos */
+body {
+    background-image: url('../Img/Fondo_Page.png');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Estilos generales para el logo */
+  .logo {
+    display: flex; /* Usamos flexbox para alinear los elementos en una fila */
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    justify-content: center; /* Centra el logo y el texto horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    flex-direction: column; /* Alinea el logo y el texto en una columna */
+  }
+  
+  .logo-img {
+    width: 200px; /* Ajusta el tamaño del logo (más pequeño para móviles) */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-bottom: 10px; /* Espacio entre el logo y el texto */
+  }
+  
+  h5 {
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos del encabezado y el logo */
+header {
+    background-color: rgba(2, 44, 92, 0.7);
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+  }
+  
+  header:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  header .logo h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  header .logo p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+  }
+  
+  
+  
+  h6 {
+    background: rgba(243, 231, 231, 0.8); /* Fondo translúcido blanco (80% opaco) */
+    font-size: 24px; /* Ajusta el tamaño de fuente */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    text-align: center; /* Centrar el texto */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+    width: fit-content; /* El ancho se ajustará al contenido */
+    margin: 20px auto; /* Centrado en la pantalla con un margen superior e inferior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave (opcional) */
+  }
+  
+  /* Barra de navegación */
+  .navbarlog {
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbarlog .menulog {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbarlog .menulog li {
+    margin: 0 1.5em;
+  }
+  
+  .navbarlog .menulog a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .menulog a:hover {
+    background-color: rgba(11, 1, 48, 0.8);
+    transform: translateY(-3px);
+  }
+  
+  .navbar .menulog a:active {
+    transform: translateY(1px);
+    background-color: #357ab7;
+  }
+  
+  /* Estilos del pie de página */
+footer {
+  background-color: rgba(51, 51, 51, 0.8);
+  color: rgb(247, 243, 243);
+  text-align: center;
+  margin-top: 4%;
+  padding: 1.5em 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+footer .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+footer .social-links li a {
+  color: #4a90e2;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+footer .social-links li a:hover {
+  color: white;
+}
+
+  
+
+/* Estilos para el contenedor del formulario */
+/* Contenedor que envuelve la tarjeta (Formulario) */
+.body-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+
+    margin: 0;               /* Elimina márgenes por defecto */
+}
+
+/* Estilos para el contenedor del formulario */
+.user_card {
+    margin-top: 4%;          /* Espacio superior */
+    width: 90%;              /* Adaptación responsiva: ocupa el 90% del ancho en pantallas pequeñas */
+    max-width: 400px;        /* Limita el tamaño máximo en pantallas grandes */
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco translúcido */
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para efecto de profundidad */
+    text-align: center;
+}
+
+
+/* Estilos para el logo */
+.brand_logo_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.brand_logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los campos de entrada */
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group-text {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.input_user, .input_pass {
+    height: 45px;
+    border: 1px solid #ced4da;
+    border-radius: 0 5px 5px 0;
+}
+
+.login_btn {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.login_btn:hover {
+    background-color: #0056b3;
+}
+
+/* Enlace de recuperación de contraseña */
+.links a {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Mensaje de error */
+#errorMessage {
+    margin-top: 10px;
+    font-size: 14px;
+}

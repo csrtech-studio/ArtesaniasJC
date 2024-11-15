@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artesanías JC - Tienda Virtual</title>
+  <link rel="icon" href="img/logojc.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logojc.png" alt="Logo Artesanías JC" class="logo-img">
+      <h5>Artesanías JC - Home</h5>
+    </div>
+    <p>Artesanías hechas a mano con amor y dedicación...</p>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="products.html">Productos</a></li>
+       
+        <li><a href="login.html">Administrador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome-section">
+      <h2>Bienvenido a nuestra tienda virtual</h2>
+    </section>
+
+    <!-- Marquesina de fotos -->
+    <section class="carousel-container">
+        <div class="carousel" id="carousel">
+            <div id="carousel-images" class="carousel-track">
+                <!-- Las imágenes del carrusel se cargarán aquí -->
+            </div>
+        </div>
+    </section>
+    
+    
+  </main>
+
+  <footer>
+    <p>Conéctate con nosotros:</p>
+    <ul class="social-links">
+      <li><a href="https://www.facebook.com/donjulio.electrico?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+      <li><a href="https://wa.me/8111775113" target="_blank">WhatsApp</a></li>
+    </ul>
+    <p>&copy; 2024 CsrTech Studio. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Firebase y tu archivo JS -->
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+
+<script type="module" src="js/firebaseConfig.js"></script>
+<script type="module" src="js/main.js"></script>
+
+
+
+
+</body>
+</html>

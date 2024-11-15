@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet N4 - Iniciar Sesión</title>
+    <link rel="icon" href="img/logojc.ico" type="image/x-icon">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="icon" href="Img/n4.ico" type="image/n4-icon">
+    <link rel="stylesheet" href="css/Login.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logojc.png" alt="Logo Artesanías JC" class="logo-img">
+          <h5>Artesanías JC - Home</h5>
+        </div>
+        <p>Artesanías hechas a mano con amor y dedicación...</p>
+        <nav class="navbarlog">
+          <ul class="menulog">
+            li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Productos</a></li>
+            <li><a href="login.html">Administrador</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+    <div class="container h-100">
+        <div class="d-flex justify-content-center h-100">
+            <div class="body-container">
+            <div class="user_card">
+                <div class="d-flex justify-content-center">
+                    <div class="brand_logo_container">
+                        <img src="Img/Logojc.png" class="brand_logo" alt="Logo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center form_container">
+                    <form id="loginForm">
+                        <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="email" id="email" class="form-control input_user" placeholder="Correo" required>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" id="password" class="form-control input_pass" placeholder="Contraseña" required>
+                        </div>
+                        <div id="errorMessage" class="alert alert-danger d-none" role="alert">
+                            <!-- Aquí se mostrarán los mensajes de error -->
+                        </div>
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            <button type="submit" class="btn login_btn">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-center links">
+                        <a href="recuperar.html" class="ml-2"> Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <p>Conéctate con nosotros:</p>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/donjulio.electrico?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+          <li><a href="https://wa.me/8111775113" target="_blank">WhatsApp</a></li>
+        </ul>
+        <p>&copy; 2024 CsrTech Studio. Todos los derechos reservados.</p>
+      </footer>
+    
+
+    <!-- Incluir Firebase config -->
+    <script type="module" src="js/firebaseConfig.js"></script>
+    
+    <!-- Script para manejar el login -->
+    <script type="module" src="js/login.js"></script>
+</body>
+</html>

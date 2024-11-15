@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Administrador - Artesanías JC</title>
+  <link rel="icon" href="img/logojc.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logojc.png" alt="Logo Artesanías JC" class="logo-img">
+      <h5>Artesanías JC - Administrador</h5>
+    </div>
+    <p>Administración de productos artesanales.</p>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="products.html">Productos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de categorías -->
+    <section>
+      <h2>Añadir Categoría</h2>
+      <form id="add-category-form">
+        <input type="text" id="category-name" placeholder="Nombre de la Categoría" required>
+        <button type="submit">Añadir Categoría</button>
+      </form>
+      <table id="categories-list">
+        <tr>
+          <th>Categoría</th>
+          <th>Acciones</th>
+        </tr>
+        <!-- Aquí se agregarán las categorías -->
+      </table>
+    </section>
+
+    <!-- Sección de productos -->
+    <section>
+      <h2>Añadir Producto</h2>
+      <form id="add-product-form">
+        <label for="product-name">Nombre del Producto</label>
+        <input type="text" id="product-name" required>
+      
+        <label for="product-description">Descripción</label>
+        <textarea id="product-description" required></textarea>
+      
+        <label for="product-price">Precio</label>
+        <input type="number" id="product-price" required>
+      
+        <label for="product-stock">Stock</label>
+        <input type="number" id="product-stock" required>
+      
+        <label for="product-category">Categoría</label>
+        <select id="product-category" required></select>
+      
+        <label for="product-image">Imagen del Producto</label>
+        <input type="file" id="product-image" accept="image/*" required>
+<img id="image-preview" src="" alt="Imagen del producto" >
+
+<button id="add-product-btn" type="submit">Añadir Producto</button>
+
+        
+      </form>
+      
+      <table id="products-list">
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Acciones</th>
+        </tr>
+        <!-- Aquí se agregarán los productos -->
+      </table>
+    </section>
+
+    <!-- Sección de carrusel de imágenes -->
+    <h2>Cargar Imágenes al Carrusel</h2>
+    <form id="add-carousel-image-form">
+      <input type="file" id="carousel-image" accept="image/*" required>
+      <button type="submit">Subir Imagen</button>
+    </form>
+      
+    <!-- Contenedor para las imágenes del carrusel -->
+    <div id="carousel-images"></div>
+  </main>
+
+  <footer>
+    <p>Conéctate con nosotros:</p>
+    <ul class="social-links">
+      <li><a href="https://www.facebook.com/donjulio.electrico?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+      <li><a href="https://wa.me/8111775113" target="_blank">WhatsApp</a></li>
+    </ul>
+    <p>&copy; 2024 CsrTech Studio. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts de Firebase y JavaScript personalizado -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
